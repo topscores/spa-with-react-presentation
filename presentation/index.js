@@ -102,6 +102,11 @@ export default class Presentation extends React.Component {
               <Image src={images.spaArch.replace("/", "")} margin="0px auto 20px" height="500px"/>
             </Layout>
           </Slide>
+          <Slide transition={["slide"]} bgColor={dark}>
+            <Heading size={1} fit caps margin="0 auto 50px" textColor="primary">
+              Programming before it was cool
+            </Heading>
+          </Slide>
           <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
             <Appear fid="1">
               <Heading size={1} caps fit textColor="primary">
