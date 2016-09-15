@@ -9,6 +9,7 @@ import {
   CodePane,
   Deck,
   Fill,
+  Fit,
   Heading,
   Image,
   Layout,
@@ -78,9 +79,28 @@ export default class Presentation extends React.Component {
             </Heading>
           </Slide>
           <Slide transition={["slide"]} bgColor={dark}>
-            <Heading size={1} fit caps>
-              Single Page Application Development
-            </Heading>         
+            <Heading size={1} fit caps margin="0 auto 50px" textColor="primary">
+              Traditional web application
+            </Heading>
+            <Layout>
+              <Image src={images.traditionArch.replace("/", "")} margin="0px auto 20px" height="500px"/>
+            </Layout>
+          </Slide>
+          <Slide transition={["slide"]} bgColor={dark}>
+            <Heading size={1} fit caps margin="0 auto 50px" textColor="primary">
+              With the help of AJAX
+            </Heading>
+            <Layout>
+              <Image src={images.ajaxArch.replace("/", "")} margin="0px auto 20px" height="500px"/>
+            </Layout>
+          </Slide>
+          <Slide transition={["slide"]} bgColor={dark}>
+            <Heading size={1} fit caps margin="0 auto 50px" textColor="primary">
+              Single Page Application
+            </Heading>
+            <Layout>
+              <Image src={images.spaArch.replace("/", "")} margin="0px auto 20px" height="500px"/>
+            </Layout>
           </Slide>
           <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
             <Appear fid="1">
