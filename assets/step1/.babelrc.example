@@ -1,6 +1,6 @@
 {
   "presets": [
-    "es2015", // convert es2015 -> vanila javascript
-    "react"   // convert jsx -> vanila javascript
+    "es2015",
+    "react"
   ]
 }

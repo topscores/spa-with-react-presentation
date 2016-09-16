@@ -1,0 +1,2 @@
+import math from 'lib/math'
+console.log('2π = ' + math.add(math.pi, math.pi))

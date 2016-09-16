@@ -1,0 +1,9 @@
+const pi = 3.141593
+const add = (x, y) => {
+  return x + y
+}
+
+export default {
+  pi,
+  add,
+}
