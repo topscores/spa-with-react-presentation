@@ -240,9 +240,14 @@ export default class Presentation extends React.Component {
               webpack
             </Code>
           </Slide>
+          <Slide transition={["slide"]} bgColor="primary">
+            <Heading size={1} fit margin="0 auto 30px" textColor="white">
+              Let's start our TodoApp
+            </Heading>
+          </Slide>
           <Slide transition={["slide"]} bgColor="secondary">
-            <Heading margin="0 auto 30px" size={1} caps textColor="primary">
-              Let's start
+            <Heading fit margin="0 auto 30px" size={1} caps textColor="primary">
+              Clone starter repository
             </Heading>
             <Appear>
               <Text textAlign="left">
@@ -260,22 +265,8 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <Text textAlign="left">
-                <Code textAlign="left" textSize={26} textColor="white">
-                  git checkout step1
-                </Code>
-              </Text>
-            </Appear>
-            <Appear>
-              <Text textAlign="left">
                 <Code textSize={26} textColor="white">
                   npm install
-                </Code>
-              </Text>
-            </Appear>
-            <Appear>
-              <Text textAlign="left">
-                <Code textSize={26} textColor="white">
-                  npm start
                 </Code>
               </Text>
             </Appear>
@@ -285,6 +276,53 @@ export default class Presentation extends React.Component {
               Hello, todos!!!
             </Heading>
             <Image src={images.step1Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="secondary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              step1: Render static component
+            </Heading>
+            <Text textAlign="left">
+              <Code textColor="white">git checkout step1</Code>
+            </Text>
+            <Text textAlign="left">
+              <Code textColor="white">npm start</Code>
+            </Text>
+          </Slide>
+          <CodeSlide
+            transition={["slide"]}
+            lang="js"
+            code={require("raw!../assets/step1/TodoApp.example")}
+            margin="20px auto"
+            ranges={[
+              { loc: [0, 12], title: "./components/TodoApp.js" },
+              { loc: [0, 1], title: "import React and Component" },
+              { loc: [1, 2], title: "import style" },
+              { loc: [3, 4], title: "Create class extends from Component" },
+              { loc: [4, 11], title: "Implment render function" },
+            ]}
+          />
+          <CodeSlide
+            transition={["slide"]}
+            lang="js"
+            code={require("raw!../assets/step1/index.js.example")}
+            margin="20px auto"
+            ranges={[
+              { loc: [0, 5], title: "./index.js" },
+              { loc: [0, 2], title: "import React and ReactDOM" },
+              { loc: [2, 3], title: "import TodoApp component" },
+              { loc: [4, 5], title: "render to react-root" },
+            ]}
+          />
+          <Slide transition={["slide"]} bgColor="secondary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              step2: Compose multiple components
+            </Heading>
+            <Text textAlign="left">
+              <Code textColor="white">git checkout step2</Code>
+            </Text>
+            <Text textAlign="left">
+              <Code textColor="white">npm start</Code>
+            </Text>
           </Slide>
           <Slide transition={["slide"]}>
             <Heading size={1} caps fit textColor="white" textFont="primary">
