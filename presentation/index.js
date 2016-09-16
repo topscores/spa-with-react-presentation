@@ -43,6 +43,7 @@ require("spectacle/lib/themes/default/index.css");
 const images = {
   reactLogo: require("../assets/react-logo.png"),
   step1Png: require("../assets/step1/step1.png"),
+  transpile: require("../assets/step1/transpile.png"),
   traditionArch: require("../assets/tradition.png"),
   ajaxArch: require("../assets/ajax.png"),
   spaArch: require("../assets/spa.png")
@@ -107,11 +108,55 @@ export default class Presentation extends React.Component {
               </Text>
             </Appear>
           </Slide>
-          <Slide transition={["zoom", "slide"]}>
+          <Slide transition={["slide"]}>
             <Heading size={1} margin="0 auto 30px" textColor="white">
               Hello, todos!!!
             </Heading>
             <Image src={images.step1Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="secondary">
+            <Heading size={1} margin="0 auto 30px" textColor="primary">
+              Basic ES6
+            </Heading>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="secondary">
+            <Heading size={1} margin="0 auto 30px" textColor="primary">
+              Arrow function
+            </Heading>
+            <Layout>
+              <Fill>
+                <CodePane
+                  lang="js"
+                  margin={20}
+                  textSize={28}
+                  source={require("raw!../assets/step1/arrowfunction.example")}
+                />
+              </Fill>
+              <Fill>
+                <CodePane
+                  lang="js"
+                  margin={20}
+                  textSize={28}
+                  source={require("raw!../assets/step1/function.example")}
+                />
+              </Fill>
+            </Layout>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="secondary">
+            <Heading size={1} margin="0 auto 30px" textColor="primary">
+              ES5 function
+            </Heading>
+            <CodePane
+              lang="js"
+              textSize={32}
+              source={require("raw!../assets/step1/function.example")}
+            />
+          </Slide>
+          <Slide transition={["slide"]}>
+            <Heading size={1} margin="0 auto 30px" textColor="white">
+              Transpile
+            </Heading>
+            <Image src={images.transpile.replace("/", "")} margin="0px auto 20px" height="400px"/>
           </Slide>
           <CodeSlide
             transition={["zoom"]}
@@ -120,8 +165,8 @@ export default class Presentation extends React.Component {
             margin="20px auto"
             ranges={[
               { loc: [0, 6], title: ".babelrc" },
-              { loc: [2, 3], title: ".babelrc" },
-              { loc: [3, 4], title: ".babelrc" }
+              { loc: [2, 3], title: "to transpile es6" },
+              { loc: [3, 4], title: "to transpile jsx" }
             ]}
           />
           <CodeSlide
