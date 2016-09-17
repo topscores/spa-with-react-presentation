@@ -56,6 +56,7 @@ const images = {
   step33: require("../assets/step3/step3-3.png"),
   step34: require("../assets/step3/step3-4.png"),
   step35: require("../assets/step3/step3-5.png"),
+  vdom: require("../assets/step3/vdom.png"),
   transpile: require("../assets/step1/transpile.png"),
   bundlemodule: require("../assets/step1/bundlemodule.png"),
   traditionArch: require("../assets/tradition.png"),
@@ -488,6 +489,46 @@ export default class Presentation extends React.Component {
             </Heading>
             <Image src={images.step35.replace("/", "")} margin="0px auto 20px" height="400px"/>
           </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} caps margin="0 auto 30px" textColor="white">
+              Virtual DOM
+            </Heading>
+            <Image src={images.vdom.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Text textColor="secondary" fit>https://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.html</Text>
+          </Slide>
+          <CodeSlide
+            transition={["slide"]}
+            lang="js"
+            code={require("raw!../assets/step3/TodoApp.js.example")}
+            margin="20px auto"
+            ranges={[
+              { loc: [0, 6], title: "TodoApp" },
+              { loc: [6, 8], title: "Add constructor" },
+              { loc: [6, 12], title: "Init state" },
+              { loc: [17, 24], title: "addTodo callback" },
+              { loc: [50, 55], title: "updateNewTodo callback" },
+              { loc: [12, 13], title: "bind this to addTodo" },
+              { loc: [15, 16], title: "bind this to updateNewTodo" },
+              { loc: [59, 63], title: "pass addTodo to TodoInput" }
+            ]}
+          />
+          <CodeSlide
+            transition={["slide"]}
+            lang="js"
+            code={require("raw!../assets/step3/TodoInput.js.example")}
+            margin="20px auto"
+            ranges={[
+              { loc: [0, 3], title: "TodoInput" },
+              { loc: [20, 30], title: "Render function" },
+              { loc: [26, 28], title: "Add event handler" },
+              { loc: [8, 11], title: "onChange Handler" },
+              { loc: [11, 12], title: "onKeyDown Handler" },
+              { loc: [12, 16], title: "if not enter do nothing" },
+              { loc: [16, 19], title: "otherwise call addTodo" },
+              { loc: [3, 8], title: "bind this to handlers" },
+            ]}
+          />
+
           <Slide transition={["slide"]}>
             <Heading size={1} caps fit textColor="white" textFont="primary">
               Let's talk about history
