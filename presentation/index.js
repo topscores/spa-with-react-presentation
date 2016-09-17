@@ -49,6 +49,7 @@ const images = {
   step2_3Png: require("../assets/step2/step2-3.png"),
   step2_4Png: require("../assets/step2/step2-4.png"),
   step2_5Png: require("../assets/step2/step2-5.png"),
+  step2_6Png: require("../assets/step2/step2-6.png"),
   transpile: require("../assets/step1/transpile.png"),
   bundlemodule: require("../assets/step1/bundlemodule.png"),
   traditionArch: require("../assets/tradition.png"),
@@ -69,7 +70,7 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Spectacle theme={theme}>
-        <Deck transition={["zoom", "slide"]} transitionDuration={0}>
+        <Deck transition={[]} transitionDuration={500}>
           <Slide transition={["zoom"]} bgColor="secondary">
             <Image src={images.reactLogo.replace("/", "")} margin="0px auto 20px" height="200px"/>
             <Heading size={1} fit caps lineHeight={1} textColor="primary">
@@ -281,12 +282,16 @@ export default class Presentation extends React.Component {
             <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
               step1: Render static component
             </Heading>
-            <Text textAlign="left">
-              <Code textColor="white">git checkout step1</Code>
-            </Text>
-            <Text textAlign="left">
-              <Code textColor="white">npm start</Code>
-            </Text>
+            <Appear>
+              <Text textAlign="left" margin="0 auto 20px">
+                <Code textColor="white">git checkout step1</Code>
+              </Text>
+            </Appear>
+            <Appear>
+              <Text textAlign="left">
+                <Code textColor="white">npm start</Code>
+              </Text>
+            </Appear>
           </Slide>
           <Slide transition={["slide"]}>
             <Heading size={1} margin="0 auto 30px" textColor="white">
@@ -323,12 +328,16 @@ export default class Presentation extends React.Component {
             <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
               step2: Compose multiple components
             </Heading>
-            <Text textAlign="left">
-              <Code textColor="white">git checkout step2</Code>
-            </Text>
-            <Text textAlign="left">
-              <Code textColor="white">npm start</Code>
-            </Text>
+            <Appear>
+              <Text textAlign="left" margin="0 auto 20px">
+                <Code textColor="white">git checkout step2</Code>
+              </Text>
+            </Appear>
+            <Appear>
+              <Text textAlign="left">
+                <Code textColor="white">npm start</Code>
+              </Text>
+            </Appear>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
@@ -365,6 +374,77 @@ export default class Presentation extends React.Component {
               React is about composing components
             </Heading>
             <Image src={images.step2_5Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              React is about composing components
+            </Heading>
+            <Image src={images.step2_6Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+          </Slide>
+          <CodeSlide
+            transition={["slide"]}
+            lang="js"
+            code={require("raw!../assets/step2/TodoApp.js.example")}
+            margin="20px auto"
+            ranges={[
+              { loc: [0, 6], title: "TodoApp" },
+              { loc: [2, 4], title: "Import child components" },
+              { loc: [6, 15], title: "Render function" },
+              { loc: [10, 12], title: "Add child components" },
+            ]}
+          />
+          <CodeSlide
+            transition={["slide"]}
+            lang="js"
+            code={require("raw!../assets/step2/TodoInput.js.example")}
+            margin="20px auto"
+            ranges={[
+              { loc: [0, 9], title: "TodoInput" },
+              { loc: [3, 8], title: "Render function" },
+              { loc: [4, 7], title: "Render input with placeholder" },
+            ]}
+          />
+          <CodeSlide
+            transition={["slide"]}
+            lang="js"
+            code={require("raw!../assets/step2/TodoList.js.example")}
+            margin="20px auto"
+            ranges={[
+              { loc: [0, 4], title: "TodoList" },
+              { loc: [4, 9], title: "Dummy todo for testing" },
+              { loc: [9, 12], title: "For all todos in array" },
+              { loc: [12, 13], title: "Render TodoItem for all todos" },
+              { loc: [10, 15] }
+            ]}
+          />
+          <CodeSlide
+            transition={["slide"]}
+            lang="js"
+            code={require("raw!../assets/step2/TodoItem.js.example")}
+            margin="20px auto"
+            ranges={[
+              { loc: [0, 3], title: "TodoItem" },
+              { loc: [3, 12], title: "Render function" },
+              { loc: [5, 6], title: "Render css class according to status" },
+              { loc: [5, 7], title: "Check box for showing status" },
+              { loc: [5, 8], title: "Show todo from this.props" },
+              { loc: [5, 10], title: "Delete todo button" },
+            ]}
+          />
+          <Slide bgColor="secondary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              step3: Manipulate component's state
+            </Heading>
+            <Appear>
+              <Text textAlign="left" margin="0 auto 20px">
+                <Code textColor="white">git checkout step3</Code>
+              </Text>
+            </Appear>
+            <Appear>
+              <Text textAlign="left">
+                <Code textColor="white">npm start</Code>
+              </Text>
+            </Appear>
           </Slide>
           <Slide transition={["slide"]}>
             <Heading size={1} caps fit textColor="white" textFont="primary">
