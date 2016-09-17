@@ -43,13 +43,19 @@ require("spectacle/lib/themes/default/index.css");
 const images = {
   reactLogo: require("../assets/react-logo.png"),
   step1Png: require("../assets/step1/step1.png"),
-  step2_0Png: require("../assets/step2/step2-0.png"),
-  step2_1Png: require("../assets/step2/step2-1.png"),
-  step2_2Png: require("../assets/step2/step2-2.png"),
-  step2_3Png: require("../assets/step2/step2-3.png"),
-  step2_4Png: require("../assets/step2/step2-4.png"),
-  step2_5Png: require("../assets/step2/step2-5.png"),
-  step2_6Png: require("../assets/step2/step2-6.png"),
+  step20: require("../assets/step2/step2-0.png"),
+  step21: require("../assets/step2/step2-1.png"),
+  step22: require("../assets/step2/step2-2.png"),
+  step23: require("../assets/step2/step2-3.png"),
+  step24: require("../assets/step2/step2-4.png"),
+  step25: require("../assets/step2/step2-5.png"),
+  step26: require("../assets/step2/step2-6.png"),
+  step30: require("../assets/step3/step3-0.png"),
+  step31: require("../assets/step3/step3-1.png"),
+  step32: require("../assets/step3/step3-2.png"),
+  step33: require("../assets/step3/step3-3.png"),
+  step34: require("../assets/step3/step3-4.png"),
+  step35: require("../assets/step3/step3-5.png"),
   transpile: require("../assets/step1/transpile.png"),
   bundlemodule: require("../assets/step1/bundlemodule.png"),
   traditionArch: require("../assets/tradition.png"),
@@ -258,21 +264,21 @@ export default class Presentation extends React.Component {
             </Heading>
             <Appear>
               <Text textAlign="left">
-                <Code textAlign="left" textSize={26} textColor="white">
+                <Code textAlign="left" textSize={20} textColor="white">
                   git clone https://github.com/topscores/todo-react-redux.git
                 </Code>
               </Text>
             </Appear>
             <Appear>
               <Text textAlign="left">
-                <Code textAlign="left" textSize={26} textColor="white">
+                <Code textAlign="left" textSize={20} textColor="white">
                   cd todo-react-redux
                 </Code>
               </Text>
             </Appear>
             <Appear>
               <Text textAlign="left">
-                <Code textSize={26} textColor="white">
+                <Code textSize={20} textColor="white">
                   npm install
                 </Code>
               </Text>
@@ -343,43 +349,43 @@ export default class Presentation extends React.Component {
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               React is about composing components
             </Heading>
-            <Image src={images.step2_0Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step20.replace("/", "")} margin="0px auto 20px" height="400px"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               React is about composing components
             </Heading>
-            <Image src={images.step2_1Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step21.replace("/", "")} margin="0px auto 20px" height="400px"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               React is about composing components
             </Heading>
-            <Image src={images.step2_2Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step22.replace("/", "")} margin="0px auto 20px" height="400px"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               React is about composing components
             </Heading>
-            <Image src={images.step2_3Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step23.replace("/", "")} margin="0px auto 20px" height="400px"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               React is about composing components
             </Heading>
-            <Image src={images.step2_4Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step24.replace("/", "")} margin="0px auto 20px" height="400px"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               React is about composing components
             </Heading>
-            <Image src={images.step2_5Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step25.replace("/", "")} margin="0px auto 20px" height="400px"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               React is about composing components
             </Heading>
-            <Image src={images.step2_6Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step26.replace("/", "")} margin="0px auto 20px" height="400px"/>
           </Slide>
           <CodeSlide
             transition={["slide"]}
@@ -445,6 +451,42 @@ export default class Presentation extends React.Component {
                 <Code textColor="white">npm start</Code>
               </Text>
             </Appear>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              Dataflow in React
+            </Heading>
+            <Image src={images.step30.replace("/", "")} margin="0px auto 20px" height="400px"/>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              Dataflow in React
+            </Heading>
+            <Image src={images.step31.replace("/", "")} margin="0px auto 20px" height="400px"/>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              Dataflow in React
+            </Heading>
+            <Image src={images.step32.replace("/", "")} margin="0px auto 20px" height="400px"/>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              Dataflow in React
+            </Heading>
+            <Image src={images.step33.replace("/", "")} margin="0px auto 20px" height="400px"/>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              Dataflow in React
+            </Heading>
+            <Image src={images.step34.replace("/", "")} margin="0px auto 20px" height="400px"/>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              Dataflow in React
+            </Heading>
+            <Image src={images.step35.replace("/", "")} margin="0px auto 20px" height="400px"/>
           </Slide>
           <Slide transition={["slide"]}>
             <Heading size={1} caps fit textColor="white" textFont="primary">
