@@ -42,6 +42,8 @@ require("spectacle/lib/themes/default/index.css");
 
 const images = {
   reactLogo: require("../assets/react-logo.png"),
+  avatar: require("../assets/avatar.png"),
+  todo: require("../assets/todo.png"),
   step1Png: require("../assets/step1/step1.png"),
   step20: require("../assets/step2/step2-0.png"),
   step21: require("../assets/step2/step2-1.png"),
@@ -89,6 +91,44 @@ export default class Presentation extends React.Component {
             <Text textSize="1.2em" margin="40px 0px 0px" bold textColor="primary">Software Freedom Day 2016 - Bangkok</Text>
             <Text textSize="1.2em" margin="10px 0px 0px" bold textColor="primary">Kasetsart University Bangkhen</Text>
             <Text textSize="1.2em" margin="40px 0px 0px" bold textColor="white">Arnupharp Viratanapanu</Text>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="secondary">
+            <Heading size={3} margin="0 auto 30px" textColor="primary">
+              Me
+            </Heading>
+            <Image src={images.avatar.replace("/", "")} />
+            <Text margin="0 20px" textColor="white" textSize={40}>Arnupharp Viratanapanu (Top)</Text>
+            <Text margin="0 20px" textColor="white" textSize={40}>Co-founder Larngear Technology / Streaming</Text>
+            <Text margin="0 20px" textColor="white" textSize={40}>github.com/topscores</Text>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="secondary">
+            <Heading size={1} fit caps margin="0 auto 50px" textColor="primary">
+              What will we do today?
+            </Heading>
+            <Image src={images.todo.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide transition={["slide"]}>
+            <Heading size={1} caps fit textColor="white" textFont="primary">
+              Let's talk about history
+            </Heading>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="secondary">
+            <Heading size={1} fit caps margin="0 auto 50px" textColor="primary">
+              Traditional web application
+            </Heading>
+            <Image src={images.traditionArch.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="secondary">
+            <Heading size={1} fit caps margin="0 auto 50px" textColor="primary">
+              With the help of AJAX
+            </Heading>
+            <Image src={images.ajaxArch.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="secondary">
+            <Heading size={1} fit caps margin="0 auto 50px" textColor="primary">
+              Single Page Application
+            </Heading>
+            <Image src={images.spaArch.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
             <Heading size={1} margin="0 auto 30px" textColor="white">
@@ -150,7 +190,7 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
-            <Heading size={1} margin="0 auto 30px" textColor="white">
+            <Heading fit size={1} margin="0 auto 30px" textColor="white">
               Environment setup
             </Heading>
           </Slide>
@@ -528,41 +568,6 @@ export default class Presentation extends React.Component {
               { loc: [3, 8], title: "bind this to handlers" },
             ]}
           />
-
-          <Slide transition={["slide"]}>
-            <Heading size={1} caps fit textColor="white" textFont="primary">
-              Let's talk about history
-            </Heading>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="secondary">
-            <Heading size={1} fit caps margin="0 auto 50px" textColor="primary">
-              Traditional web application
-            </Heading>
-            <Layout>
-              <Image src={images.traditionArch.replace("/", "")} margin="0px auto 20px" height="500px"/>
-            </Layout>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="secondary">
-            <Heading size={1} fit caps margin="0 auto 50px" textColor="primary">
-              With the help of AJAX
-            </Heading>
-            <Layout>
-              <Image src={images.ajaxArch.replace("/", "")} margin="0px auto 20px" height="500px"/>
-            </Layout>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="secondary">
-            <Heading size={1} fit caps margin="0 auto 50px" textColor="primary">
-              Single Page Application
-            </Heading>
-            <Layout>
-              <Image src={images.spaArch.replace("/", "")} margin="0px auto 20px" height="500px"/>
-            </Layout>
-          </Slide>
-          <Slide textAlign="top" transition={["slide"]} bgColor="secondary">
-            <Heading size={1} fit caps margin="0 auto 50px" textColor="primary">
-              Programming before it was cool
-            </Heading>
-          </Slide>
         </Deck>
       </Spectacle>
     );
