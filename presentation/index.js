@@ -252,7 +252,7 @@ export default class Presentation extends React.Component {
             <Appear>
               <Text textAlign="left">
                 <Code textAlign="left" textSize={26} textColor="white">
-                  git clone git@github.com:topscores/todo-react-redux.git
+                  git clone https://github.com/topscores/todo-react-redux.git
                 </Code>
               </Text>
             </Appear>
@@ -271,12 +271,6 @@ export default class Presentation extends React.Component {
               </Text>
             </Appear>
           </Slide>
-          <Slide transition={["slide"]}>
-            <Heading size={1} margin="0 auto 30px" textColor="white">
-              Hello, todos!!!
-            </Heading>
-            <Image src={images.step1Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
-          </Slide>
           <Slide transition={["slide"]} bgColor="secondary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
               step1: Render static component
@@ -287,6 +281,12 @@ export default class Presentation extends React.Component {
             <Text textAlign="left">
               <Code textColor="white">npm start</Code>
             </Text>
+          </Slide>
+          <Slide transition={["slide"]}>
+            <Heading size={1} margin="0 auto 30px" textColor="white">
+              Hello, todos!!!
+            </Heading>
+            <Image src={images.step1Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
           </Slide>
           <CodeSlide
             transition={["slide"]}
