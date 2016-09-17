@@ -43,6 +43,12 @@ require("spectacle/lib/themes/default/index.css");
 const images = {
   reactLogo: require("../assets/react-logo.png"),
   step1Png: require("../assets/step1/step1.png"),
+  step2_0Png: require("../assets/step2/step2-0.png"),
+  step2_1Png: require("../assets/step2/step2-1.png"),
+  step2_2Png: require("../assets/step2/step2-2.png"),
+  step2_3Png: require("../assets/step2/step2-3.png"),
+  step2_4Png: require("../assets/step2/step2-4.png"),
+  step2_5Png: require("../assets/step2/step2-5.png"),
   transpile: require("../assets/step1/transpile.png"),
   bundlemodule: require("../assets/step1/bundlemodule.png"),
   traditionArch: require("../assets/tradition.png"),
@@ -63,7 +69,7 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Spectacle theme={theme}>
-        <Deck transition={["zoom", "slide"]} transitionDuration={500}>
+        <Deck transition={["zoom", "slide"]} transitionDuration={0}>
           <Slide transition={["zoom"]} bgColor="secondary">
             <Image src={images.reactLogo.replace("/", "")} margin="0px auto 20px" height="200px"/>
             <Heading size={1} fit caps lineHeight={1} textColor="primary">
@@ -298,7 +304,7 @@ export default class Presentation extends React.Component {
               { loc: [0, 1], title: "import React and Component" },
               { loc: [1, 2], title: "import style" },
               { loc: [3, 4], title: "Create class extends from Component" },
-              { loc: [4, 11], title: "Implment render function" },
+              { loc: [4, 11], title: "Implment render function" }
             ]}
           />
           <CodeSlide
@@ -310,10 +316,10 @@ export default class Presentation extends React.Component {
               { loc: [0, 5], title: "./index.js" },
               { loc: [0, 2], title: "import React and ReactDOM" },
               { loc: [2, 3], title: "import TodoApp component" },
-              { loc: [4, 5], title: "render to react-root" },
+              { loc: [4, 5], title: "render to react-root" }
             ]}
           />
-          <Slide transition={["slide"]} bgColor="secondary">
+          <Slide bgColor="secondary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
               step2: Compose multiple components
             </Heading>
@@ -323,6 +329,42 @@ export default class Presentation extends React.Component {
             <Text textAlign="left">
               <Code textColor="white">npm start</Code>
             </Text>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              React is about composing components
+            </Heading>
+            <Image src={images.step2_0Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              React is about composing components
+            </Heading>
+            <Image src={images.step2_1Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              React is about composing components
+            </Heading>
+            <Image src={images.step2_2Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              React is about composing components
+            </Heading>
+            <Image src={images.step2_3Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              React is about composing components
+            </Heading>
+            <Image src={images.step2_4Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              React is about composing components
+            </Heading>
+            <Image src={images.step2_5Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
           </Slide>
           <Slide transition={["slide"]}>
             <Heading size={1} caps fit textColor="white" textFont="primary">
