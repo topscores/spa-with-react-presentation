@@ -50,6 +50,7 @@ const images = {
   traditionArch: require("../assets/tradition.png"),
   ajaxArch: require("../assets/ajax.png"),
   spaArch: require("../assets/spa.png"),
+  structure: require("../assets/structure.png"),
   step1Png: require("../assets/step1/step1.png"),
   step20: require("../assets/step2/step2-0.png"),
   step21: require("../assets/step2/step2-1.png"),
@@ -367,6 +368,12 @@ export default class Presentation extends React.Component {
               Hello, todos!!!
             </Heading>
             <Image src={images.step1Png.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide transition={["slide"]}>
+            <Heading size={1} margin="0 auto 30px" textColor="white">
+              Directory structure
+            </Heading>
+            <Image src={images.structure.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <CodeSlide
             transition={["slide"]}
