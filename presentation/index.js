@@ -116,6 +116,7 @@ export default class Presentation extends React.Component {
             <Image src={images.avatar.replace("/", "")} />
             <Text margin="0 20px" textColor="white" textSize={40}>Arnupharp Viratanapanu (Top)</Text>
             <Text margin="0 20px" textColor="white" textSize={40}>Co-founder Larngear Technology / Streaming</Text>
+            <Text margin="0 20px" textColor="white" textSize={40}>Thai Programmer Association</Text>
             <Text margin="0 20px" textColor="white" textSize={40}>github.com/topscores</Text>
           </Slide>
           <Slide transition={["slide"]} bgColor="secondary">
@@ -748,6 +749,7 @@ export default class Presentation extends React.Component {
             margin="20px auto"
             ranges={[
               { loc: [0, 0], title: "TodoInput" },
+              { loc: [1, 2], title: "Import connect function" },
               { loc: [2, 3], title: "Import action creator" },
               { loc: [4, 5], title: "Don't export TodoInput just yet" },
               { loc: [34, 39], title: "Map state to props" },
