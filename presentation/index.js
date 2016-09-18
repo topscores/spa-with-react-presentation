@@ -44,6 +44,12 @@ const images = {
   reactLogo: require("../assets/react-logo.png"),
   avatar: require("../assets/avatar.png"),
   todo: require("../assets/todo.png"),
+  transpile: require("../assets/step1/transpile.png"),
+  bundlemodule: require("../assets/step1/bundlemodule.png"),
+  index: require("../assets/index.png"),
+  traditionArch: require("../assets/tradition.png"),
+  ajaxArch: require("../assets/ajax.png"),
+  spaArch: require("../assets/spa.png"),
   step1Png: require("../assets/step1/step1.png"),
   step20: require("../assets/step2/step2-0.png"),
   step21: require("../assets/step2/step2-1.png"),
@@ -73,12 +79,7 @@ const images = {
   redux7: require("../assets/step4/redux7.png"),
   redux8: require("../assets/step4/redux8.png"),
   redux9: require("../assets/step4/redux9.png"),
-  vdom: require("../assets/step3/vdom.png"),
-  transpile: require("../assets/step1/transpile.png"),
-  bundlemodule: require("../assets/step1/bundlemodule.png"),
-  traditionArch: require("../assets/tradition.png"),
-  ajaxArch: require("../assets/ajax.png"),
-  spaArch: require("../assets/spa.png")
+  vdom: require("../assets/step3/vdom.png")
 };
 
 preloader(images);
@@ -293,6 +294,12 @@ export default class Presentation extends React.Component {
               { loc: [11, 15], title: "set loader for .css" }
             ]}
           />
+          <Slide transition={["slide"]} bgColor="secondary">
+            <Heading size={1} margin="0 auto 30px" textColor="primary">
+              index.html
+            </Heading>
+            <Image bgColor="white" src={images.index.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
           <Slide transition={["slide"]} bgColor="secondary">
             <Heading size={1} fit textColor="primary" margin={40}>
               Start development server with livereload
