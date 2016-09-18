@@ -58,6 +58,21 @@ const images = {
   step33: require("../assets/step3/step3-3.png"),
   step34: require("../assets/step3/step3-4.png"),
   step35: require("../assets/step3/step3-5.png"),
+  problem0: require("../assets/step4/problem0.png"),
+  problem1: require("../assets/step4/problem1.png"),
+  problem2: require("../assets/step4/problem2.png"),
+  statemgt0: require("../assets/step4/statemanagement0.png"),
+  statemgt1: require("../assets/step4/statemanagement1.png"),
+  redux0: require("../assets/step4/redux0.png"),
+  redux1: require("../assets/step4/redux1.png"),
+  redux2: require("../assets/step4/redux2.png"),
+  redux3: require("../assets/step4/redux3.png"),
+  redux4: require("../assets/step4/redux4.png"),
+  redux5: require("../assets/step4/redux5.png"),
+  redux6: require("../assets/step4/redux6.png"),
+  redux7: require("../assets/step4/redux7.png"),
+  redux8: require("../assets/step4/redux8.png"),
+  redux9: require("../assets/step4/redux9.png"),
   vdom: require("../assets/step3/vdom.png"),
   transpile: require("../assets/step1/transpile.png"),
   bundlemodule: require("../assets/step1/bundlemodule.png"),
@@ -568,6 +583,121 @@ export default class Presentation extends React.Component {
               { loc: [3, 8], title: "bind this to handlers" },
             ]}
           />
+          <Slide bgColor="secondary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              step4: Manage state with Redux
+            </Heading>
+            <Appear>
+              <Text textAlign="left" margin="0 auto 20px">
+                <Code textColor="white">git checkout step4</Code>
+              </Text>
+            </Appear>
+            <Appear>
+              <Text textAlign="left">
+                <Code textColor="white">npm start</Code>
+              </Text>
+            </Appear>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              Manage state is difficult
+            </Heading>
+            <Image src={images.problem0.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              Manage state is difficult
+            </Heading>
+            <Image src={images.problem1.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide bgColor="primary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              Manage state is difficult
+            </Heading>
+            <Image src={images.problem2.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="secondary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              State management in React
+            </Heading>
+            <Image src={images.statemgt0.replace("/", "")} margin="0px auto 20px" width="80%"/>
+            <Text textColor="white">https://css-tricks.com/learning-react-redux/</Text>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="secondary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              State management in Redux
+            </Heading>
+            <Image src={images.statemgt1.replace("/", "")} margin="0px auto 20px" width="80%"/>
+            <Text textColor="white">https://css-tricks.com/learning-react-redux/</Text>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="white">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              Redux architecture
+            </Heading>
+            <Image src={images.redux0.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide transition={[]} bgColor="white">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              Redux architecture
+            </Heading>
+            <Image src={images.redux1.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide transition={[]} bgColor="white">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              Redux architecture
+            </Heading>
+            <Image src={images.redux2.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide transition={[]} bgColor="white">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              Redux architecture
+            </Heading>
+            <Image src={images.redux3.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide transition={[]} bgColor="white">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              Redux architecture
+            </Heading>
+            <Image src={images.redux4.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide transition={[]} bgColor="white">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              Redux architecture
+            </Heading>
+            <Image src={images.redux5.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide transition={[]} bgColor="white">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              Redux architecture
+            </Heading>
+            <Image src={images.redux6.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide transition={[]} bgColor="white">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              Redux architecture
+            </Heading>
+            <Image src={images.redux7.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide transition={[]} bgColor="white">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              Redux architecture
+            </Heading>
+            <Image src={images.redux8.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide transition={[]} bgColor="white">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              Redux architecture
+            </Heading>
+            <Image src={images.redux9.replace("/", "")} margin="0px auto 20px" width="80%"/>
+          </Slide>
+          <Slide bgColor="secondary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              Q & A
+            </Heading>
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
+              Thank you for listening
+            </Heading>
+          </Slide>
         </Deck>
       </Spectacle>
     );
