@@ -776,7 +776,7 @@ export default class Presentation extends React.Component {
             ]}
           />
           <Slide bgColor="secondary">
-            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+            <Heading size={1} caps margin="0 auto 30px" textColor="primary">
               Q & A
             </Heading>
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
