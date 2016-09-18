@@ -213,13 +213,13 @@ export default class Presentation extends React.Component {
             <Heading size={1} margin="0 auto 30px" textColor="primary">
               Transpile
             </Heading>
-            <Image src={images.transpile.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.transpile.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <Slide transition={["slide"]} bgColor="secondary">
             <Heading size={1} margin="0 auto 30px" textColor="primary">
               Bundle module
             </Heading>
-            <Image bgColor="white" src={images.bundlemodule.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image bgColor="white" src={images.bundlemodule.replace("/", "")} margin="0px auto 20px" width="80%"/>
             <Text textColor="white">https://webpack.github.io/docs/usage.html</Text>
           </Slide>
           <Slide transition={["slide"]} bgColor="secondary">
@@ -359,7 +359,7 @@ export default class Presentation extends React.Component {
             <Heading size={1} margin="0 auto 30px" textColor="white">
               Hello, todos!!!
             </Heading>
-            <Image src={images.step1Png.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step1Png.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <CodeSlide
             transition={["slide"]}
@@ -405,43 +405,43 @@ export default class Presentation extends React.Component {
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               React is about composing components
             </Heading>
-            <Image src={images.step20.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step20.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               React is about composing components
             </Heading>
-            <Image src={images.step21.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step21.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               React is about composing components
             </Heading>
-            <Image src={images.step22.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step22.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               React is about composing components
             </Heading>
-            <Image src={images.step23.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step23.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               React is about composing components
             </Heading>
-            <Image src={images.step24.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step24.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               React is about composing components
             </Heading>
-            <Image src={images.step25.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step25.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               React is about composing components
             </Heading>
-            <Image src={images.step26.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step26.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <CodeSlide
             transition={["slide"]}
@@ -512,43 +512,43 @@ export default class Presentation extends React.Component {
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               Dataflow in React
             </Heading>
-            <Image src={images.step30.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step30.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               Dataflow in React
             </Heading>
-            <Image src={images.step31.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step31.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               Dataflow in React
             </Heading>
-            <Image src={images.step32.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step32.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               Dataflow in React
             </Heading>
-            <Image src={images.step33.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step33.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               Dataflow in React
             </Heading>
-            <Image src={images.step34.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step34.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="white">
               Dataflow in React
             </Heading>
-            <Image src={images.step35.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.step35.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
           <Slide bgColor="primary">
             <Heading size={1} caps margin="0 auto 30px" textColor="white">
               Virtual DOM
             </Heading>
-            <Image src={images.vdom.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <Image src={images.vdom.replace("/", "")} margin="0px auto 20px"  width="80%"/>
             <Text textColor="secondary" fit>https://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.html</Text>
           </Slide>
           <CodeSlide
@@ -690,6 +690,75 @@ export default class Presentation extends React.Component {
             </Heading>
             <Image src={images.redux9.replace("/", "")} margin="0px auto 20px" width="80%"/>
           </Slide>
+          <Slide bgColor="secondary">
+            <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
+              Usage with React
+            </Heading>
+            <Appear>
+              <Text textAlign="left" margin="0 auto 20px">
+                <Code textColor="white">npm install -S redux</Code>
+              </Text>
+            </Appear>
+            <Appear>
+              <Text textAlign="left">
+                <Code textColor="white">npm install -S react-redux</Code>
+              </Text>
+            </Appear>
+          </Slide>
+          <CodeSlide
+            transition={["slide"]}
+            lang="js"
+            code={require("raw!../assets/step4/actions.js.example")}
+            margin="20px auto"
+            ranges={[
+              { loc: [0, 0], title: "./actions.js" },
+              { loc: [0, 6], title: "addTodo action" },
+            ]}
+          />
+          <CodeSlide
+            transition={["slide"]}
+            lang="js"
+            code={require("raw!../assets/step4/reducer.js.example")}
+            margin="20px auto"
+            ranges={[
+              { loc: [0, 0], title: "./reducer.js" },
+              { loc: [0, 2], title: "Choose what to do based on action" },
+              { loc: [2, 3], title: "if action.type=ADD_TODO" },
+              { loc: [3, 9], title: "add new action to todos" },
+            ]}
+          />
+          <CodeSlide
+            transition={["slide"]}
+            lang="js"
+            code={require("raw!../assets/step4/TodoInput.js.example")}
+            margin="20px auto"
+            ranges={[
+              { loc: [0, 0], title: "TodoInput" },
+              { loc: [2, 3], title: "Import action creator" },
+              { loc: [4, 5], title: "Don't export TodoInput just yet" },
+              { loc: [34, 39], title: "Map state to props" },
+              { loc: [40, 46], title: "Map dispatch to props" },
+              { loc: [47, 48], title: "Connect with store" },
+              { loc: [24, 30], title: "Same render code" },
+              { loc: [10, 13], title: "Same event handler" },
+              { loc: [13, 22]},
+            ]}
+          />
+          <CodeSlide
+            transition={["slide"]}
+            lang="js"
+            code={require("raw!../assets/step4/index.js.example")}
+            margin="20px auto"
+            ranges={[
+              { loc: [0, 0], title: "./index.js" },
+              { loc: [3, 4], title: "Import creatStore function" },
+              { loc: [4, 5], title: "Import Provider component" },
+              { loc: [5, 6], title: "Import reducer" },
+              { loc: [7, 11], title: "Create store and init state" },
+              { loc: [11, 16], title: "Wrap root component with Provider" },
+              { loc: [16, 17], title: "Render wrapped component"}
+            ]}
+          />
           <Slide bgColor="secondary">
             <Heading size={1} fit caps margin="0 auto 30px" textColor="primary">
               Q & A

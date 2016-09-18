@@ -1,2 +1,2 @@
-import math from 'lib/math'
-console.log('2π = ' + math.add(math.pi, math.pi))
+import add, { pi } from 'lib/math'
+console.log('2π = ' + add(pi, pi))
